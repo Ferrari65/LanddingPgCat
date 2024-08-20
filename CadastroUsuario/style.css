@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  color: white;
+}
+
+/* Configura o nav para estar no topo da página */
+nav {
+  position: absolute;
+  top: 50px;
+  left: 500px;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Usa Flexbox */
+  flex-wrap: wrap; /* Permite que os itens se movam para a linha abaixo se necessário */
+}
+a {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+li {
+  margin-right: 50px; /* Espaço entre os itens */
+}
+
+/* Remove sublinhado dos links e define padding */
+a:hover {
+  display: block;
+  text-decoration: none;
+  color: rgb(22, 232, 36); /* Altere conforme sua preferência */
+}
+body {
+  background: linear-gradient(170deg, #201839 0%, #00bd4c 90%);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: rgb(42, 42, 43);
+  border-radius: 18px;
+  margin: 15px;
+  max-width: 600px;
+  width: 100%;
+  box-sizing: 0 3px 5px rgba(0, 0, 0 0.5);
+  overflow: hidden;
+  box-shadow: 0px 5px 9px #312d4b;
+}
+.header {
+  background: linear-gradient(20deg, #cfff3fc1 0%, #00ffbb 100%);
+  padding: 23px;
+  justify-content: space-between;
+}
+
+.form {
+  padding: 18px;
+}
+
+.form-content {
+  margin-bottom: 8px;
+  padding-bottom: 18px;
+  position: relative;
+}
+.form-content label {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    background: #121212;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    border-radius: 14px;
+    margin: 14px;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: 0 3px 5px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+
+  .header {
+    background: linear-gradient(120deg, #3acbf0 0%, #8bb0ff 100%);
+    padding: 24px;
+    text-align: center;
+  }
+
+  .form {
+    padding: 18px;
+  }
+
+  .form-content {
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative;
+  }
+
+  .form-content label {
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+
+  .form-content input {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+  }
+
+  .form-content a {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: hidden;
+  }
+}
+.form-content input {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  padding: 8px;
+  border: 2px solid rgb(1, 129, 11);
+  background-color: #0000005e;
+}
+.form-content a {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  visibility: hidden;
+}
+.form button {
+  background-color: #65ff6f;
+  color: rgb(255, 255, 255);
+  border-radius: 16px;
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  font-size: 19px;
+  cursor: pointer;
+  margin-top: 14px;
+}
+.form button:hover {
+  background-color: #41476c;
+  color: #1aff00;
+}
+
+.form-content.error input {
+  border-color: #ff1149;
+}
+.form-content.error a {
+  color: #ff1149;
+  visibility: visible;
+}
